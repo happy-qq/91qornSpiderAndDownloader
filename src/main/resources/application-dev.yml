@@ -1,11 +1,14 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.31.177:3309/porn?useSSL=false&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/porn?useSSL=false&useUnicode=true&characterEncoding=utf8
     username: root
-    password: Iloveu1989
+    password: 123456
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
 logging:
   level: debug
